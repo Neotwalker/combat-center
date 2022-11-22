@@ -1,0 +1,169 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header
+		&--bottom
+			.row
+				row-gap: 30px
+				justify-content: center
+			.bottom--block
+				&:nth-child(2)
+					order: -1
+			.menu
+				justify-content: space-between
+	.news
+		&--main
+			padding-left: 15px
+			margin-bottom: 30px
+		&--all
+			padding-left: 15px
+		&--slider
+			&.slick-dotted.slick-slider
+				margin-bottom: 30px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header
+		min-height: 100px
+		&--top 
+			.burger
+				display: flex
+		&--bottom
+			.row
+				justify-content: space-between
+	.menu
+		&--mobile
+			width: 70%
+	.news
+		&--slider
+			margin-left: -15px
+			margin-right: -15px
+		&--item
+			min-height: 320px
+	.sport
+		&--list
+			row-gap: 20px
+			justify-content: space-between
+			.item
+				max-width: 50%
+				&:first-child
+					max-width: 100%
+				// &:nth-child(2)
+				// 	padding-right: 0
+				// &:nth-child(3)
+				// 	padding-left: 0
+	.map, .all, .news
+		margin-bottom: 30px
+	.all
+		.item
+			margin-bottom: 20px
+	.photoreport
+		&--slider
+			margin: 0
+		&--item
+			padding: 0
+	body.inner .header
+		padding-bottom: 30px
+	.news
+		&.inner 
+			.image
+				.wrapper
+					bottom: 20px
+					left: 20px
+				img
+					min-height: 300px
+				.title
+					font-size: 24px
+		&--banner
+			padding: 0
+	.inner
+		&--photos
+			justify-content: space-between
+		&--main__article
+			padding-right: 0
+		.other-news 
+			.sport--item
+				margin: 0
+	.other-news
+		display: flex
+		justify-content: space-between
+		gap: 10px
+		.sport--item
+			max-width: calc(50% - 10px)
+	.photos
+		&--banner
+			padding: 0
+		&.inner 
+			.title, .text
+				font-size: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.social
+		justify-content: center
+	.menu
+		&--right
+			justify-content: flex-end
+	.news
+		&.inner 
+			.image
+				.title
+					font-size: 20px
+				img
+					height: 170px
+					min-height: auto
+	.sport
+		&--item
+			&__title
+				font-size: 15px
+			&__date, &__text
+				font-size: 12px
+	.photos
+		&--banner
+			margin-bottom: 30px
+		&.inner
+			.image
+				img
+					height: 170px
+					min-height: auto
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
